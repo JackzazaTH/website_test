@@ -7,8 +7,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <h1>Minimal Site</h1>
+  <nav class="navbar">
+    <div class="logo">🧩 MyStore</div>
+    <div class="menu">
+      <button>หน้าแรก</button>
+      <button>สินค้า</button>
+      <button>ติดต่อ</button>
+    </div>
     <button id="toggleTheme">🌓 เปลี่ยนโทน</button>
   </nav>
 
@@ -17,6 +22,33 @@
     <p>เว็บสไตล์มินิมอล ทันสมัย ปรับได้สองโทน</p>
     <a href="login.html" class="btn">เข้าสู่ระบบ</a>
   </section>
+
+  <marquee behavior="scroll" direction="left" class="announce">
+    📣 โปรโมชั่น! สินค้าใหม่ลดสูงสุด 30% ถึงสิ้นเดือนนี้เท่านั้น!
+  </marquee>
+
+  <section class="slider">
+    <img id="slide" src="img1.jpg" alt="ภาพสไลด์" />
+  </section>
+
+  <section class="products">
+    <h2>สินค้าแนะนำ</h2>
+    <div class="grid">
+      <div class="product">
+        <img src="product1.jpg" alt="สินค้า 1" />
+        <p>สินค้า 1</p>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="สินค้า 2" />
+        <p>สินค้า 2</p>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="สินค้า 3" />
+        <p>สินค้า 3</p>
+      </div>
+    </div>
+  </section>
+
 
   <script src="script.js"></script>
 </body>
