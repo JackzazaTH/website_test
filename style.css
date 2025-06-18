@@ -1,0 +1,42 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --accent: #007aff;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f2f2f2;
+  --accent: #00c6a2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
